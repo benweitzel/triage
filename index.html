@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+* { box-sizing: border-box }
+body { margin: 0; text-align: center }
+
+#questions {
+  display: grid;
+  block-size: 100vh;
+  inline-size: 100vw;
+}
+.question {
+  grid-area: 1/1/-1/-1;
+  
+  transform: translateX( 100% );
+
+  transition: transform 500ms ease-in-out;
+}
+.question.visited { transform: translateX( -100% ) }
+.question.active { transform: translateX( 0 ) }
+
+</style>
+</head>
+
+<body>
+
+<h1>START Triage</h1>
+
+<div id="questions">
+
+    <!-- WALK -->
+    <div class="question active" id="system">
+      <h2>Is patient able to walk?</h2>
+      <button class="goTo" data-goto="green">Yes</button>
+      <button class="goTo" data-goto="breathing">No</button>
+    </div>
+    <div class="question" id="green">
+        <h3>MINOR</h3>
+      </div>
+  
+    <!-- BREATHING -->
+    <div class="question" id="breathing">
+      <h2>Is the patient spontaneously breathing?</h2>
+        <button class="goTo" data-goto="resp">Yes</button>
+        <button class="goTo" data-goto="position">No</button>
+    </div>
+  
+    <!-- BREATHING POST-AIRWAY POSITIONING -->
+    <div class="question" id="position">
+        <h1>POSITION AIRWAY</h1>
+        <h2>Is the patient spontaneously breathing after airway positioning?</h2>
+          <button class="goTo" data-goto="resp">Yes</button>
+          <button class="goTo" data-goto="black">No</button>
+      </div>
+      <div class="question" id="black">
+        <h3>EXPECTANT</h3>
+      </div>
+    
+  <!-- RESP RATE -->
+  <div class="question" id="resp">
+    <h2>Respiratory Rate?</h2>
+    <p>Choose the problem</p>
+      <button class="goTo" data-goto="perfusion">Less than 30</button>
+      <button class="goTo" data-goto="red">More than 30</button>
+  </div>
+  <div class="question" id="red">
+    <h3>IMMEDIATE</h3>
+  </div>
+
+    <!-- PERFUSION -->
+    <div class="question" id="perfusion">
+      <h2>Is patient perfusing?</h2>
+      <p>Capillary refill under 2 sec or radial pulse present</p>
+        <button class="goTo" data-goto="mental">Yes</button>
+        <button class="goTo" data-goto="red">No</button>
+    </div>
+  <div class="question" id="red">
+    <h3>IMMEDIATE</h3>
+  </div>
+  
+    <!-- MENTAL STATUS -->
+    <div class="question" id="mental">
+      <h2>Does patient follow commands?</h2>
+      <p>Choose the problem</p>
+        <button class="goTo" data-goto="yellow">Obeys commands</button>
+        <button class="goTo" data-goto="red">Does NOT obey commands</button>
+    </div>
+    <div class="question" id="yellow">
+      <h3>DELAYED</h3>
+    </div>
+    <div class="question" id="red">
+      <h3>IMMEDIATE</h3>
+    </div>
+  </div>
+
+<script>
+const buttons = Array.from(document.getElementsByClassName('goTo'));
+
+buttons.forEach( button => {
+  button.addEventListener('click', function () {
+    const gotoId = button.getAttribute('data-goto');
+    
+    const currQuestion = document.getElementsByClassName('active')[0];
+    const nextQuestion = document.getElementById(gotoId);
+    
+    currQuestion.classList.add('visited'), currQuestion.classList.remove('active');
+    
+    nextQuestion.classList.add('active');
+  });
+});
+
+</script>
+
+</body>
+</html>
