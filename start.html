@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>START Triage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 <style>
@@ -57,10 +57,13 @@ div.card{
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link"  href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link active" aria-current="page" href="#">START</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">JumpSTART</a>
           </li>
         </ul>
         <span class="navbar-text">
@@ -73,7 +76,7 @@ div.card{
 <!-- BODY -->
 <div class="container text-center">
 
-<h1>START Triage</h1>
+<h1>START Triage (Adults)</h1>
 
 <div class="row">
     <div class="col">
@@ -153,6 +156,10 @@ div.card{
     document.getElementById("immediate").style.display = "none";
     document.getElementById('expectant').style.display = "none";
     document.getElementById('breath1').style.display = "none";
+    document.getElementById('breath2').style.display = "none";
+    document.getElementById('resp').style.display = "none";
+    document.getElementById('perfusion').style.display = "none";
+    document.getElementById('mental').style.display = "none";
 }
 
    function walk_no() {
@@ -170,6 +177,8 @@ div.card{
    document.getElementById('expectant').style.display = "none";
    document.getElementById('breath2').style.display = "none";
    document.getElementById('resp').style.display = "block";
+   document.getElementById('perfusion').style.display = "none";
+   document.getElementById('mental').style.display = "none";
 }
    function breath1_no() {
    document.getElementById("minor").style.display = "none";
@@ -178,6 +187,8 @@ div.card{
    document.getElementById('expectant').style.display = "none";
    document.getElementById('breath2').style.display = "block";
    document.getElementById('resp').style.display = "none";
+   document.getElementById('perfusion').style.display = "none";
+   document.getElementById('mental').style.display = "none";
 }
 
    function breath2_yes() {
@@ -201,6 +212,7 @@ div.card{
     document.getElementById("immediate").style.display = "none";
     document.getElementById('expectant').style.display = "none";
     document.getElementById('perfusion').style.display = "block";
+    document.getElementById('mental').style.display = "none";
 }
     function resp_gt30() {
     document.getElementById("minor").style.display = "none";
