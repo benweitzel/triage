@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<style>
+div.tags{
+    width: 320px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 0;
+    color:white;
+}
+
+#minor{
+    background-color:green;
+}
+
+#delayed{
+    background-color:yellow;
+    color:black;
+}
+
+#immediate{
+    background-color:red;
+}
+
+#expectant{
+    background-color:black;
+}
+
+div.card{
+    padding:10px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<div class="container">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MCI Triage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+            Open-access mass-casualty incident triage tool
+        </span>
+      </div>
+    </div>
+  </nav>
+
+<!-- BODY -->
+<div class="container text-center">
+
+<h1>START Triage</h1>
+
+<div class="row">
+    <div class="col">
+
+        <form>
+
+            <div class="card" id="walk" style="display:block;">
+                <p>Able to walk?</p>
+                <input type="button" name="answer" value="YES" class="question" id="walk" onclick="walk_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="walk" onclick="walk_no()"/>
+            </div>
+            <br>
+            <div class="card" id="breath1" style="display:none;">
+                <p>Spontaneous Breathing?</p>
+                <input type="button" name="answer" value="YES" class="question" id="breath1" onclick="breath1_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="breath1" onclick="breath1_no()"/>
+            </div>
+            <br>
+            <div class="card" id="breath2" style="display:none;">
+            <h2>Position Airway</h2>
+            <p>Spontaneous Breathing?</p>
+                <input type="button" name="answer" value="YES" class="question" id="breath2" onclick="breath2_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="breath2" onclick="breath2_no()"/>
+                <br>   
+            </div>
+                
+            <div id="expired">
+            
+            <div class="card" id="resp" style="display:none;">
+                <p>Respiratory Rate?</p>
+                <input type="button" name="answer" value="<30" class="question" id="resp" onclick="resp_lt30()"/>
+                <input type="button" name="answer" value=">30" class="question" id="resp" onclick="resp_gt30()"/>
+            </div>
+            <br>
+            <div class="card" id="perfusion" style="display:none;">
+                <p>Perfusion? (capillary refill or radial pulse)</p>
+                <input type="button" name="answer" value="YES" class="question" id="perfusion" onclick="perfusion_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="perfusion" onclick="perfusion_no()"/>
+            </div>
+            <br>
+            <div class="card" id="mental" style="display:none;">
+                <p>Mental Status?</p>
+                <input type="button" name="answer" value="Obeys commands" class="question" id="mental" onclick="mental_yes()"/>
+                <input type="button" name="answer" value="Does NOT obey commands" class="question" id="mental" onclick="mental_no()"/>
+            </div>
+            
+            </div>
+            
+            
+            </form>
+
+    </div>
+    
+    <div class="col">
+
+        <div id="tag_list">
+            <div class="tags" id="minor" style="display:none;" class="answer_list"> MINOR</div>
+            <div class="tags" id="delayed" style="display:none;" class="answer_list">DELAYED</div>
+            <div class="tags" id="immediate" style="display:none;" class="answer_list">IMMEDIATE</div>
+            <div class="tags" id="expectant" style="display:none;" class="answer_list">EXPECTANT</div>
+                </div>
+
+
+
+    </div>
+</div>
+</div>
+
+</div>
+
+<script>
+    // ANSWER SCRIPT
+    
+    function walk_yes() {
+    document.getElementById('minor').style.display = "block";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('breath1').style.display = "none";
+}
+
+   function walk_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('breath1').style.display = "block";
+}
+
+   function breath1_yes() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('breath2').style.display = "none";
+   document.getElementById('resp').style.display = "block";
+}
+   function breath1_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('breath2').style.display = "block";
+   document.getElementById('resp').style.display = "none";
+}
+
+   function breath2_yes() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "block";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('expired').style.display = "block";
+}
+    function breath2_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "block";
+   document.getElementById('expired').style.display = "none";
+}
+
+    function resp_lt30() {
+    document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('perfusion').style.display = "block";
+}
+    function resp_gt30() {
+    document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById('immediate').style.display = "block";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('perfusion').style.display = "none";
+}
+
+    function perfusion_yes() {
+    document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('mental').style.display = "block";
+}
+    function perfusion_no() {
+    document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "block";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('mental').style.display = "none";
+}
+
+    function mental_yes() {
+    document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "block";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
+}
+    function mental_no() {
+    document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "block";
+    document.getElementById('expectant').style.display = "none";
+}
+    
+</script>
+
+</body>
+</html>
