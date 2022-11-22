@@ -104,6 +104,10 @@ div.tags{
     document.getElementById("immediate").style.display = "none";
     document.getElementById('expectant').style.display = "none";
     document.getElementById('breath1').style.display = "none";
+    document.getElementById('breath2').style.display = "none";
+    document.getElementById('resp').style.display = "none";
+    document.getElementById('perfusion').style.display = "none";
+    document.getElementById('mental').style.display = "none";
 }
 
    function walk_no() {
@@ -121,6 +125,8 @@ div.tags{
    document.getElementById('expectant').style.display = "none";
    document.getElementById('breath2').style.display = "none";
    document.getElementById('resp').style.display = "block";
+   document.getElementById('perfusion').style.display = "none";
+   document.getElementById('mental').style.display = "none";
 }
    function breath1_no() {
    document.getElementById("minor").style.display = "none";
@@ -129,6 +135,8 @@ div.tags{
    document.getElementById('expectant').style.display = "none";
    document.getElementById('breath2').style.display = "block";
    document.getElementById('resp').style.display = "none";
+   document.getElementById('perfusion').style.display = "none";
+   document.getElementById('mental').style.display = "none";
 }
 
    function breath2_yes() {
@@ -152,6 +160,7 @@ div.tags{
     document.getElementById("immediate").style.display = "none";
     document.getElementById('expectant').style.display = "none";
     document.getElementById('perfusion').style.display = "block";
+    document.getElementById('mental').style.display = "none";
 }
     function resp_gt30() {
     document.getElementById("minor").style.display = "none";
