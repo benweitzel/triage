@@ -52,15 +52,13 @@ div.tags{
     <input type="button" name="answer" value="NO" class="question" id="breath1" onclick="breath1_no()"/>
 </div>
 
-<div id="apnea" style="display:none;">
-<div class="questions" id="breath2">
+<div class="questions" id="breath2" style="display:none;">
 
 <h2>Position Airway</h2>
 <p>Spontaneous Breathing?</p>
     <input type="button" name="answer" value="YES" class="question" id="breath2" onclick="breath2_yes()"/>
     <input type="button" name="answer" value="NO" class="question" id="breath2" onclick="breath2_no()"/>
     </div>
-</div>
     
 <div id="expired">
 
@@ -101,74 +99,95 @@ div.tags{
 // ANSWER SCRIPT
 
    function walk_yes() {
-   document.getElementById('minor').style.display = "block";
-   document.getElementById("delayed").style.display = "none";
+    document.getElementById('minor').style.display = "block";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('breath1').style.display = "none";
 }
+
    function walk_no() {
-   document.getElementById('delayed').style.display = "block";
    document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
    document.getElementById('breath1').style.display = "block";
 }
 
    function breath1_yes() {
-   document.getElementById('delayed').style.display = "block";
    document.getElementById("minor").style.display = "none";
-   document.getElementById('apnea').style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('breath2').style.display = "none";
    document.getElementById('resp').style.display = "block";
 }
    function breath1_no() {
-   document.getElementById('apnea').style.display = "block";
-   document.getElementById("delayed").style.display = "none";
    document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('breath2').style.display = "block";
+   document.getElementById('resp').style.display = "none";
 }
 
    function breath2_yes() {
-   document.getElementById('immediate').style.display = "block";
-   document.getElementById('delayed').style.display = "none";
    document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "block";
+   document.getElementById('expectant').style.display = "none";
    document.getElementById('expired').style.display = "block";
 }
     function breath2_no() {
-    document.getElementById('expectant').style.display = "block";
-    document.getElementById("minor").style.display = "none";
-    document.getElementById("delayed").style.display = "none";
-    document.getElementById("immediate").style.display = "none";
-    document.getElementById('expired').style.display = "none";
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "block";
+   document.getElementById('expired').style.display = "none";
 }
 
     function resp_lt30() {
-    document.getElementById('delayed').style.display = "block";
     document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
     document.getElementById('perfusion').style.display = "block";
 }
     function resp_gt30() {
-    document.getElementById('immediate').style.display = "block";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "none";
+    document.getElementById('immediate').style.display = "block";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('perfusion').style.display = "none";
 }
 
     function perfusion_yes() {
-    document.getElementById('delayed').style.display = "block";
     document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
     document.getElementById('mental').style.display = "block";
 }
     function perfusion_no() {
-    document.getElementById('immediate').style.display = "block";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "block";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('mental').style.display = "none";
 }
 
     function mental_yes() {
-    document.getElementById('delayed').style.display = "block";
     document.getElementById("minor").style.display = "none";
+    document.getElementById("delayed").style.display = "block";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
 }
     function mental_no() {
-    document.getElementById('immediate').style.display = "block";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "block";
+    document.getElementById('expectant').style.display = "none";
 }
-
-// BUTTON HIGHLIGHT
 
 </script>
 
