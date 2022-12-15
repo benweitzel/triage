@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JumpSTART Triage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<style>
+div.tags{
+    width: 320px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 0;
+    color:white;
+}
+
+#minor{
+    background-color:green;
+}
+
+#delayed{
+    background-color:yellow;
+    color:black;
+}
+
+#immediate{
+    background-color:red;
+}
+
+#expectant{
+    background-color:black;
+}
+
+div.card{
+    padding:10px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<div class="container">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MCI Triage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">START</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">JumpSTART</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">SALT</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+            Open-access mass-casualty incident triage tool
+        </span>
+      </div>
+    </div>
+  </nav>
+
+<!-- BODY -->
+<div class="container text-center">
+
+<h1>SALT Triage</h1>
+
+<div class="row">
+    <div class="col">
+
+        <form>
+            <h3>Step 1: Global Sorting</h3>
+            <ul align="left">
+                <li>Walk - Assess 3rd</li>
+                <li>Wave/Purposeful Movement - Assess 2nd</li>
+                <li>Still/Obvious Life Threat - Assess 1st</li>
+              </ul>
+            <br>
+            <h3>Step 2: Individual Assessment</h3>
+
+            <div class="card" id="breath" style="display:block;">
+                <p>Breathing?</p>
+                <input type="button" name="answer" value="YES" class="question" id="breath" onclick="breath_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="breath" onclick="breath_no()"/>
+            </div>
+            
+            <div class="card" id="q1" style="display:none;">
+                <p>Obeys commands or makes purposeful movements?</p>
+                <input type="button" name="answer" value="YES" class="question" id="q1" onclick="q1_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="q1" onclick="q1_no()"/>
+            </div>
+            
+            <div class="card" id="q2" style="display:none;">
+            <p>Has peripheral pulse?</p>
+                <input type="button" name="answer" value="YES" class="question" id="q2" onclick="q2_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="q2" onclick="q2_no()"/>
+            </div>
+                
+            <div class="card" id="q3" style="display:none;">
+                <p>Chest decompression?</p>
+                    <input type="button" name="answer" value="YES" class="question" id="q3" onclick="q3_yes()"/>
+                    <input type="button" name="answer" value="NO" class="question" id="q3" onclick="q3_no()"/>
+            </div>
+            
+            <div class="card" id="q4" style="display:none;">
+                <p>Major hemmorhage controlled?</p>
+                    <input type="button" name="answer" value="YES" class="question" id="q4" onclick="q4_yes()"/>
+                    <input type="button" name="answer" value="NO" class="question" id="q4" onclick="q4_no()"/>
+            </div>
+            
+            <div class="card" id="injury" style="display:none;">
+                <p>Minor injuries only?</p>
+                <input type="button" name="answer" value="YES" class="question" id="injury" onclick="injury_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="injury" onclick="injury_no()"/>
+            </div>
+            
+            <div class="card" id="survival" style="display:none;">
+                <p>Likely to survive (given current resources)?</p>
+                <input type="button" name="answer" value="YES" class="question" id="survival" onclick="survival_yes()"/>
+                <input type="button" name="answer" value="NO" class="question" id="survival" onclick="survival_no()"/>
+            </div>
+            
+            </form>
+
+    </div>
+    
+    <div class="col">
+
+        <div id="tag_list">
+            <div class="tags" id="minor" style="display:none;" class="answer_list"> MINOR</div>
+            <div class="tags" id="delayed" style="display:none;" class="answer_list">DELAYED</div>
+            <div class="tags" id="immediate" style="display:none;" class="answer_list">IMMEDIATE</div>
+            <div class="tags" id="expectant" style="display:none;" class="answer_list">EXPECTANT</div>
+                </div>
+
+
+
+    </div>
+</div>
+</div>
+
+</div>
+
+<script>
+
+    function breath_yes() {
+    document.getElementById('minor').style.display = "none";
+    document.getElementById("delayed").style.display = "none";
+    document.getElementById("immediate").style.display = "none";
+    document.getElementById('expectant').style.display = "none";
+    document.getElementById('q1').style.display = "block";
+    document.getElementById('q2').style.display = "none";
+    document.getElementById('q3').style.display = "none";
+    document.getElementById('q4').style.display = "none";
+    document.getElementById('injury').style.display = "none";
+    document.getElementById('survival').style.display = "none";
+}
+
+   function breath_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "block";
+   document.getElementById('q1').style.display = "none";
+   document.getElementById('q2').style.display = "none";
+   document.getElementById('q3').style.display = "none";
+   document.getElementById('q4').style.display = "none";
+   document.getElementById('injury').style.display = "none";
+   document.getElementById('survival').style.display = "none";
+}
+
+function q1_yes() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('q2').style.display = "block";
+   document.getElementById('q3').style.display = "none";
+   document.getElementById('q4').style.display = "none";
+   document.getElementById('injury').style.display = "none";
+   document.getElementById('survival').style.display = "none";
+}
+
+function q1_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('q2').style.display = "none";
+   document.getElementById('q3').style.display = "none";
+   document.getElementById('q4').style.display = "none";
+   document.getElementById('injury').style.display = "none";
+   document.getElementById('survival').style.display = "block";
+}
+
+function q2_yes() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('q3').style.display = "block";
+   document.getElementById('q4').style.display = "none";
+   document.getElementById('injury').style.display = "none";
+   document.getElementById('survival').style.display = "none";
+}
+
+function q2_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('q3').style.display = "none";
+   document.getElementById('q4').style.display = "none";
+   document.getElementById('injury').style.display = "none";
+   document.getElementById('survival').style.display = "block";
+}
+
+function q3_yes() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('q4').style.display = "block";
+   document.getElementById('injury').style.display = "none";
+   document.getElementById('survival').style.display = "none";
+}
+
+function q3_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('q4').style.display = "none";
+   document.getElementById('injury').style.display = "none";
+   document.getElementById('survival').style.display = "block";
+}
+
+function q4_yes() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('injury').style.display = "block";
+   document.getElementById('survival').style.display = "none";
+}
+
+function q4_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('injury').style.display = "none";
+   document.getElementById('survival').style.display = "block";
+}
+
+function injury_yes() {
+   document.getElementById("minor").style.display = "block";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('survival').style.display = "none";
+}
+
+function injury_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "block";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('survival').style.display = "none";
+}
+
+function survival_yes() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "block";
+   document.getElementById('expectant').style.display = "none";
+   document.getElementById('injury').style.display = "none";
+}
+
+function survival_no() {
+   document.getElementById("minor").style.display = "none";
+   document.getElementById("delayed").style.display = "none";
+   document.getElementById("immediate").style.display = "none";
+   document.getElementById('expectant').style.display = "block";
+   document.getElementById('injury').style.display = "none";
+} 
+
+</script>
+
+</body>
+</html>
