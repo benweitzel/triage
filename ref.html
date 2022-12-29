@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MCI Triage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<style>
+div.card{
+    padding:10px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<div class="container">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://benweitzel.github.io/triage/">MCI Triage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="https://benweitzel.github.io/triage/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="https://benweitzel.github.io/triage/start">START</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://benweitzel.github.io/triage/jumpstart">JumpSTART</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="https://benweitzel.github.io/triage/salt">SALT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="https://benweitzel.github.io/triage/ref">References</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+            Open-access mass-casualty incident triage tool
+        </span>
+      </div>
+    </div>
+  </nav>
+<br>
+<!-- BODY -->
+<div class="container text-center">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Triage Tag</th>
+            <th scope="col">Explanation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Expectant (Black)</th>
+            <td>Victim is deceased or is not expected to survive due to the severity of their injuries. </td>
+          </tr>
+          <tr>
+            <th scope="row">Immediate (Red)</th>
+            <td>Victim has severe injuries requiring immediate treatment. </td>
+          </tr>
+          <tr>
+            <th scope="row">Delayed (Yellow)</th>
+            <td>Victim has potentially severe injuries, but treatment can be delayed up to a few hours.</td>
+          </tr>
+          <tr>
+            <th scope="row">Minor (Green)</th>
+            <td>Victim has minor injuries not requiring immediate treatment. </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <h3>START References</h3>
+    <div class="card">
+        <div class="card-body" align="left">
+            <ol type="1">
+            <li>Benson, M., Koenig, K. L., & Schultz, C. H. (1996). Disaster triage: START, then SAVE -- a new method of dynamic triage for victims of a catastrophic earthquake. <i>Prehospital and Disaster Medicine</i>, 11(2), 117–124. <a href="https://doi.org/10.1017/s1049023x0004276x">https://doi.org/10.1017/s1049023x0004276x</a> </li>
+            <li>Community Emergency Response Team. (2005, August 12). <i>START - Simple Triage and Rapid Treatment</i>. Los Angeles Fire Department Disaster Preparedness Section. Retrieved from <a href="https://www.cert-la.com/downloads/education/english/start.pdf">https://www.cert-la.com/downloads/education/english/start.pdf</a> </li>
+            <li>US Department of Health & Human Services. (2022, November 16). <i>START Adult Triage Algorithm</i>. Chemical Hazards Emergency Medical Management. Retrieved from <a href="https://chemm.hhs.gov/startadult.htm">https://chemm.hhs.gov/startadult.htm</a> </li>
+        </ol>
+        </div>
+      </div> <br>
+
+      <h3>JumpSTART References</h3>
+    <div class="card">
+        <div class="card-body" align="left">
+            <ol type="1">
+            <li>Romig L. E. (2002). Pediatric triage. A system to JumpSTART your triage of young patients at MCIs. <i>JEMS: Journal of Emergency Medical Services</i>, 27(7), 52–63. </li>
+            <li>US Department of Health & Human Services. (2022, November 16). <i>JumpSTART Pediatric Triage Algorithm</i>. Chemical Hazards Emergency Medical Management. Retrieved from <a href="https://chemm.hhs.gov/startpediatric.htm">https://chemm.hhs.gov/startpediatric.htm</a> </li>        
+        </ol>
+        </div>
+      </div> <br>
+
+      <h3>SALT References</h3>
+    <div class="card">
+        <div class="card-body" align="left">
+            <ol type="1">
+            <li>SALT mass casualty triage: concept endorsed by the American College of Emergency Physicians, American College of Surgeons Committee on Trauma, American Trauma Society, National Association of EMS Physicians, National Disaster Life Support Education Consortium, and State and Territorial Injury Prevention Directors Association. (2008). <i>Disaster Medicine and Public Health Preparedness</i>, 2(4), 245–246. <a href="https://doi.org/10.1097/DMP.0b013e31818d191e">https://doi.org/10.1097/DMP.0b013e31818d191e</a> </li>
+            <li>US Department of Health & Human Services. (2022, November 16). <i>SALT Mass Casualty Triage Algorithm</i>. Chemical Hazards Emergency Medical Management. Retrieved from <a href="https://chemm.hhs.gov/salttriage.htm">https://chemm.hhs.gov/salttriage.htm</a> </li>
+        </ol>
+        </div>
+      </div><br>
+
+    <hr><br>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">About</h5>
+            <p>MCI Triage was created as a senior Honors Capstone project for a Bachelor of Science in Public Health at The Ohio State University. <br>
+                Created by Ben Weitzel, NREMT - Public Health undergraduate student at The Ohio State University and EMT. <br>
+                Faculty Advisors: Aram Dobalian, PhD, JD, MPH & Nicole McAllister, DO, MA </p>
+        </div>
+      </div>
+      <br>
+
+</div>
+
+</div>
+
+</body>
+</html>
