@@ -152,3 +152,7 @@ function resp_normal() {
     document.getElementById("immediate").style.display = "block";
     document.getElementById('expectant').style.display = "none";
 }
+
+function refresh() {
+    window.location.reload();
+  }
