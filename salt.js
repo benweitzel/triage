@@ -139,3 +139,7 @@ function survival_no() {
    document.getElementById('expectant').style.display = "block";
    document.getElementById('injury').style.display = "none";
 } 
+
+function refresh() {
+    window.location.reload();
+  }
