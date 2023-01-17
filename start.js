@@ -1,4 +1,5 @@
 function walk_yes() {
+    document.getElementById('placeholder').style.display = "none";
     document.getElementById('minor').style.display = "block";
     document.getElementById("delayed").style.display = "none";
     document.getElementById("immediate").style.display = "none";
@@ -11,6 +12,7 @@ function walk_yes() {
 }
 
    function walk_no() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -19,6 +21,7 @@ function walk_yes() {
 }
 
    function breath1_yes() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -29,6 +32,7 @@ function walk_yes() {
    document.getElementById('mental').style.display = "none";
 }
    function breath1_no() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -40,6 +44,7 @@ function walk_yes() {
 }
 
    function breath2_yes() {
+   document.getElementById('placeholder').style.display = "none";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "block";
@@ -47,6 +52,7 @@ function walk_yes() {
    document.getElementById('expired').style.display = "block";
 }
     function breath2_no() {
+   document.getElementById('placeholder').style.display = "none";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -55,6 +61,7 @@ function walk_yes() {
 }
 
     function resp_lt30() {
+    document.getElementById('placeholder').style.display = "block";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "none";
     document.getElementById("immediate").style.display = "none";
@@ -63,6 +70,7 @@ function walk_yes() {
     document.getElementById('mental').style.display = "none";
 }
     function resp_gt30() {
+    document.getElementById('placeholder').style.display = "none";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "none";
     document.getElementById('immediate').style.display = "block";
@@ -71,6 +79,7 @@ function walk_yes() {
 }
 
     function perfusion_yes() {
+    document.getElementById('placeholder').style.display = "block";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "none";
     document.getElementById("immediate").style.display = "none";
@@ -78,6 +87,7 @@ function walk_yes() {
     document.getElementById('mental').style.display = "block";
 }
     function perfusion_no() {
+    document.getElementById('placeholder').style.display = "none";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "none";
     document.getElementById("immediate").style.display = "block";
@@ -86,12 +96,14 @@ function walk_yes() {
 }
 
     function mental_yes() {
+    document.getElementById('placeholder').style.display = "none";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "block";
     document.getElementById("immediate").style.display = "none";
     document.getElementById('expectant').style.display = "none";
 }
     function mental_no() {
+    document.getElementById('placeholder').style.display = "none";
     document.getElementById("minor").style.display = "none";
     document.getElementById("delayed").style.display = "none";
     document.getElementById("immediate").style.display = "block";
