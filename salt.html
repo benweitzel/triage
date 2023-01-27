@@ -104,7 +104,7 @@
             </div>
             
             <div class="card" id="q4" style="display:none;">
-                <p>Major hemmorhage controlled?</p>
+                <p>Major hemorrhage controlled?</p>
                     <input type="button" name="answer" value="YES" class="question" id="q4" onclick="q4_yes()"/>
                     <input type="button" name="answer" value="NO" class="question" id="q4" onclick="q4_no()"/>
             </div>
@@ -127,12 +127,42 @@
     
     <div class="col">
 
-        <div id="tag_list">
-            <div class="tags" id="minor" style="display:none;" class="answer_list"> MINOR</div>
-            <div class="tags" id="delayed" style="display:none;" class="answer_list">DELAYED</div>
-            <div class="tags" id="immediate" style="display:none;" class="answer_list">IMMEDIATE</div>
-            <div class="tags" id="expectant" style="display:none;" class="answer_list">EXPECTANT</div>
-                </div>
+      <div id="tag_list">
+        <div class="alert alert-secondary" role="alert" id="placeholder" style="display:block;">Triage Tag</div>
+          <div class="alert alert-success" role="alert" id="minor" style="display:none;" class="answer_list"> MINOR</div>
+          <div class="alert alert-warning" role="alert" id="delayed" style="display:none;" class="answer_list">DELAYED</div>
+          <div class="alert alert-danger" role="alert" id="immediate" style="display:none;" class="answer_list">IMMEDIATE</div>
+          <div class="alert alert-dark" role="alert" id="expectant" style="display:none;" class="answer_list">EXPECTANT</div>
+              </div>
+
+                <div class="tag_explain">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Triage Tag</th>
+                        <th scope="col">Explanation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><div class="alert alert-dark" role="alert">Expectant</div></th>
+                        <td style="vertical-align: middle;">Victim is deceased or is not expected to survive due to the severity of their injuries. </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><div class="alert alert-danger" role="alert">Immediate</div></th>
+                        <td style="vertical-align: middle;">Victim has severe injuries requiring immediate treatment. </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><div class="alert alert-warning" role="alert">Delayed</div></th>
+                        <td style="vertical-align: middle;">Victim has potentially severe injuries, but treatment can be delayed up to a few hours.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><div class="alert alert-success" role="alert">Minor</div></th>
+                        <td style="vertical-align: middle;">Victim has minor injuries not requiring immediate treatment. </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
 
 
 

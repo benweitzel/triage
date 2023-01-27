@@ -1,4 +1,5 @@
 function breath_yes() {
+    document.getElementById('placeholder').style.display = "block";
     document.getElementById('minor').style.display = "none";
     document.getElementById("delayed").style.display = "none";
     document.getElementById("immediate").style.display = "none";
@@ -12,6 +13,7 @@ function breath_yes() {
 }
 
    function breath_no() {
+   document.getElementById('placeholder').style.display = "none";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -25,6 +27,7 @@ function breath_yes() {
 }
 
 function q1_yes() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -37,6 +40,7 @@ function q1_yes() {
 }
 
 function q1_no() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -49,6 +53,7 @@ function q1_no() {
 }
 
 function q2_yes() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -60,6 +65,7 @@ function q2_yes() {
 }
 
 function q2_no() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -71,6 +77,7 @@ function q2_no() {
 }
 
 function q3_yes() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -81,6 +88,7 @@ function q3_yes() {
 }
 
 function q3_no() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -91,6 +99,7 @@ function q3_no() {
 }
 
 function q4_yes() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -100,6 +109,7 @@ function q4_yes() {
 }
 
 function q4_no() {
+   document.getElementById('placeholder').style.display = "block";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -109,6 +119,7 @@ function q4_no() {
 }
 
 function injury_yes() {
+   document.getElementById('placeholder').style.display = "none";
    document.getElementById("minor").style.display = "block";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
@@ -117,6 +128,7 @@ function injury_yes() {
 }
 
 function injury_no() {
+   document.getElementById('placeholder').style.display = "none";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "block";
    document.getElementById("immediate").style.display = "none";
@@ -125,6 +137,7 @@ function injury_no() {
 }
 
 function survival_yes() {
+   document.getElementById('placeholder').style.display = "none";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "block";
@@ -133,6 +146,7 @@ function survival_yes() {
 }
 
 function survival_no() {
+   document.getElementById('placeholder').style.display = "none";
    document.getElementById("minor").style.display = "none";
    document.getElementById("delayed").style.display = "none";
    document.getElementById("immediate").style.display = "none";
