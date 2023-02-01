@@ -10,6 +10,17 @@ function breath_yes() {
     document.getElementById('q4').style.display = "none";
     document.getElementById('injury').style.display = "none";
     document.getElementById('survival').style.display = "none";
+    document.getElementById('q1explain').style.display = "none";
+    document.getElementById('q2explain').style.display = "none";
+    document.getElementById('q3explain').style.display = "block";
+    document.getElementById('q3-2explain').style.display = "none";
+    document.getElementById('q4explain').style.display = "none";
+    document.getElementById('q4-2explain').style.display = "none";
+    document.getElementById('q5explain').style.display = "none";
+    document.getElementById('q5-2explain').style.display = "none";
+    document.getElementById('q6explain').style.display = "none";
+    document.getElementById('q6-2explain').style.display = "none";
+    document.getElementById('q7explain').style.display = "none";
 }
 
    function breath_no() {
@@ -24,6 +35,17 @@ function breath_yes() {
    document.getElementById('q4').style.display = "none";
    document.getElementById('injury').style.display = "none";
    document.getElementById('survival').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "block";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function q1_yes() {
@@ -37,6 +59,17 @@ function q1_yes() {
    document.getElementById('q4').style.display = "none";
    document.getElementById('injury').style.display = "none";
    document.getElementById('survival').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "block";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function q1_no() {
@@ -50,6 +83,17 @@ function q1_no() {
    document.getElementById('q4').style.display = "none";
    document.getElementById('injury').style.display = "none";
    document.getElementById('survival').style.display = "block";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "block";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function q2_yes() {
@@ -62,6 +106,17 @@ function q2_yes() {
    document.getElementById('q4').style.display = "none";
    document.getElementById('injury').style.display = "none";
    document.getElementById('survival').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "block";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function q2_no() {
@@ -74,6 +129,17 @@ function q2_no() {
    document.getElementById('q4').style.display = "none";
    document.getElementById('injury').style.display = "none";
    document.getElementById('survival').style.display = "block";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "block";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function q3_yes() {
@@ -85,6 +151,17 @@ function q3_yes() {
    document.getElementById('q4').style.display = "block";
    document.getElementById('injury').style.display = "none";
    document.getElementById('survival').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "block";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function q3_no() {
@@ -96,6 +173,17 @@ function q3_no() {
    document.getElementById('q4').style.display = "none";
    document.getElementById('injury').style.display = "none";
    document.getElementById('survival').style.display = "block";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "block";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function q4_yes() {
@@ -106,6 +194,17 @@ function q4_yes() {
    document.getElementById('expectant').style.display = "none";
    document.getElementById('injury').style.display = "block";
    document.getElementById('survival').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "block";
 }
 
 function q4_no() {
@@ -116,6 +215,17 @@ function q4_no() {
    document.getElementById('expectant').style.display = "none";
    document.getElementById('injury').style.display = "none";
    document.getElementById('survival').style.display = "block";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "block";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function injury_yes() {
@@ -125,6 +235,17 @@ function injury_yes() {
    document.getElementById("immediate").style.display = "none";
    document.getElementById('expectant').style.display = "none";
    document.getElementById('survival').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "block";
 }
 
 function injury_no() {
@@ -134,6 +255,17 @@ function injury_no() {
    document.getElementById("immediate").style.display = "none";
    document.getElementById('expectant').style.display = "none";
    document.getElementById('survival').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "none";
+   document.getElementById('q7explain').style.display = "block";
 }
 
 function survival_yes() {
@@ -143,6 +275,17 @@ function survival_yes() {
    document.getElementById("immediate").style.display = "block";
    document.getElementById('expectant').style.display = "none";
    document.getElementById('injury').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "block";
+   document.getElementById('q7explain').style.display = "none";
 }
 
 function survival_no() {
@@ -152,6 +295,17 @@ function survival_no() {
    document.getElementById("immediate").style.display = "none";
    document.getElementById('expectant').style.display = "block";
    document.getElementById('injury').style.display = "none";
+   document.getElementById('q1explain').style.display = "none";
+   document.getElementById('q2explain').style.display = "none";
+   document.getElementById('q3explain').style.display = "none";
+   document.getElementById('q3-2explain').style.display = "none";
+   document.getElementById('q4explain').style.display = "none";
+   document.getElementById('q4-2explain').style.display = "none";
+   document.getElementById('q5explain').style.display = "none";
+   document.getElementById('q5-2explain').style.display = "none";
+   document.getElementById('q6explain').style.display = "none";
+   document.getElementById('q6-2explain').style.display = "block";
+   document.getElementById('q7explain').style.display = "none";
 } 
 
 function refresh() {
