@@ -1,3 +1,7 @@
 div.card{
     padding:10px;
 }
+
+.alert-light{
+    border-color:black;
+}
