@@ -4,4 +4,5 @@ div.card{
 
 .alert-light{
     border-color:black;
+    --bs-alert-border-color: #000000;
 }
