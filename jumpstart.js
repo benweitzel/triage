@@ -11,6 +11,14 @@ function walk_yes() {
     document.getElementById('resp').style.display = "none";
     document.getElementById('pulse').style.display = "none";
     document.getElementById('mental').style.display = "none";
+    document.getElementById('q1explain').style.display = "block"
+    document.getElementById('q2explain').style.display = "none"
+    document.getElementById('q3-1explain').style.display = "none"
+    document.getElementById('q3-2explain').style.display = "none"
+    document.getElementById('q3-3explain').style.display = "none"
+    document.getElementById('q4explain').style.display = "none"
+    document.getElementById('q5explain').style.display = "none"
+    document.getElementById('q6explain').style.display = "none"
 }
 
    function walk_no() {
@@ -20,6 +28,14 @@ function walk_yes() {
    document.getElementById("immediate").style.display = "none";
    document.getElementById('expectant').style.display = "none";
    document.getElementById('breath1').style.display = "block";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "block"
+   document.getElementById('q3-1explain').style.display = "none"
+   document.getElementById('q3-2explain').style.display = "none"
+   document.getElementById('q3-3explain').style.display = "none"
+   document.getElementById('q4explain').style.display = "none"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
 
    function breath1_yes() {
@@ -34,6 +50,14 @@ function walk_yes() {
    document.getElementById('resp').style.display = "block";
    document.getElementById('pulse').style.display = "none";
    document.getElementById('mental').style.display = "none";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "none"
+   document.getElementById('q3-1explain').style.display = "none"
+   document.getElementById('q3-2explain').style.display = "none"
+   document.getElementById('q3-3explain').style.display = "none"
+   document.getElementById('q4explain').style.display = "block"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
    function breath1_no() {
    document.getElementById('placeholder').style.display = "block";   
@@ -47,6 +71,14 @@ function walk_yes() {
    document.getElementById('resp').style.display = "none";
    document.getElementById('pulse').style.display = "none";
    document.getElementById('mental').style.display = "none";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "none"
+   document.getElementById('q3-1explain').style.display = "block"
+   document.getElementById('q3-2explain').style.display = "none"
+   document.getElementById('q3-3explain').style.display = "none"
+   document.getElementById('q4explain').style.display = "none"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
 
    function breath2_yes() {
@@ -60,6 +92,14 @@ function walk_yes() {
    document.getElementById('resp').style.display = "none";
    document.getElementById('pulse').style.display = "none";
    document.getElementById('mental').style.display = "none";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "none"
+   document.getElementById('q3-1explain').style.display = "block"
+   document.getElementById('q3-2explain').style.display = "none"
+   document.getElementById('q3-3explain').style.display = "none"
+   document.getElementById('q4explain').style.display = "none"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
     function breath2_no() {
    document.getElementById('placeholder').style.display = "block";   
@@ -72,6 +112,14 @@ function walk_yes() {
    document.getElementById('resp').style.display = "none";
    document.getElementById('pulse').style.display = "none";
    document.getElementById('mental').style.display = "none";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "none"
+   document.getElementById('q3-1explain').style.display = "none"
+   document.getElementById('q3-2explain').style.display = "block"
+   document.getElementById('q3-3explain').style.display = "none"
+   document.getElementById('q4explain').style.display = "none"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
 
 function breath3_yes() {
@@ -84,6 +132,14 @@ function breath3_yes() {
    document.getElementById('resp').style.display = "none";
    document.getElementById('pulse').style.display = "none";
    document.getElementById('mental').style.display = "none";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "none"
+   document.getElementById('q3-1explain').style.display = "none"
+   document.getElementById('q3-2explain').style.display = "none"
+   document.getElementById('q3-3explain').style.display = "block"
+   document.getElementById('q4explain').style.display = "none"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
 function breath3_no() {
    document.getElementById('placeholder').style.display = "none";
@@ -95,6 +151,14 @@ function breath3_no() {
    document.getElementById('resp').style.display = "none";
    document.getElementById('pulse').style.display = "none";
    document.getElementById('mental').style.display = "none";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "none"
+   document.getElementById('q3-1explain').style.display = "none"
+   document.getElementById('q3-2explain').style.display = "block"
+   document.getElementById('q3-3explain').style.display = "none"
+   document.getElementById('q4explain').style.display = "none"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
 
 function breath4_yes() {
@@ -106,6 +170,14 @@ function breath4_yes() {
    document.getElementById('resp').style.display = "none";
    document.getElementById('pulse').style.display = "none";
    document.getElementById('mental').style.display = "none";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "none"
+   document.getElementById('q3-1explain').style.display = "none"
+   document.getElementById('q3-2explain').style.display = "none"
+   document.getElementById('q3-3explain').style.display = "block"
+   document.getElementById('q4explain').style.display = "none"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
 function breath4_no() {
    document.getElementById('placeholder').style.display = "none";
@@ -116,6 +188,14 @@ function breath4_no() {
    document.getElementById('resp').style.display = "none";
    document.getElementById('pulse').style.display = "none";
    document.getElementById('mental').style.display = "none";
+   document.getElementById('q1explain').style.display = "none"
+   document.getElementById('q2explain').style.display = "none"
+   document.getElementById('q3-1explain').style.display = "none"
+   document.getElementById('q3-2explain').style.display = "none"
+   document.getElementById('q3-3explain').style.display = "block"
+   document.getElementById('q4explain').style.display = "none"
+   document.getElementById('q5explain').style.display = "none"
+   document.getElementById('q6explain').style.display = "none"
 }
 
 function resp_normal() {
@@ -126,6 +206,14 @@ function resp_normal() {
     document.getElementById('expectant').style.display = "none";
     document.getElementById('pulse').style.display = "block";
     document.getElementById('mental').style.display = "none";
+    document.getElementById('q1explain').style.display = "none"
+    document.getElementById('q2explain').style.display = "none"
+    document.getElementById('q3-1explain').style.display = "none"
+    document.getElementById('q3-2explain').style.display = "none"
+    document.getElementById('q3-3explain').style.display = "none"
+    document.getElementById('q4explain').style.display = "none"
+    document.getElementById('q5explain').style.display = "block"
+    document.getElementById('q6explain').style.display = "none"
 }
     function resp_abnormal() {
     document.getElementById('placeholder').style.display = "none";
@@ -135,6 +223,14 @@ function resp_normal() {
     document.getElementById('expectant').style.display = "none";
     document.getElementById('pulse').style.display = "none";
     document.getElementById('mental').style.display = "none";
+    document.getElementById('q1explain').style.display = "none"
+    document.getElementById('q2explain').style.display = "none"
+    document.getElementById('q3-1explain').style.display = "none"
+    document.getElementById('q3-2explain').style.display = "none"
+    document.getElementById('q3-3explain').style.display = "none"
+    document.getElementById('q4explain').style.display = "block"
+    document.getElementById('q5explain').style.display = "none"
+    document.getElementById('q6explain').style.display = "none"
 }
 
     function pulse_yes() {
@@ -144,6 +240,14 @@ function resp_normal() {
     document.getElementById("immediate").style.display = "none";
     document.getElementById('expectant').style.display = "none";
     document.getElementById('mental').style.display = "block";
+    document.getElementById('q1explain').style.display = "none"
+    document.getElementById('q2explain').style.display = "none"
+    document.getElementById('q3-1explain').style.display = "none"
+    document.getElementById('q3-2explain').style.display = "none"
+    document.getElementById('q3-3explain').style.display = "none"
+    document.getElementById('q4explain').style.display = "none"
+    document.getElementById('q5explain').style.display = "none"
+    document.getElementById('q6explain').style.display = "block"
 }
     function pulse_no() {
     document.getElementById('placeholder').style.display = "none";
@@ -152,6 +256,14 @@ function resp_normal() {
     document.getElementById("immediate").style.display = "block";
     document.getElementById('expectant').style.display = "none";
     document.getElementById('mental').style.display = "none";
+    document.getElementById('q1explain').style.display = "none"
+    document.getElementById('q2explain').style.display = "none"
+    document.getElementById('q3-1explain').style.display = "none"
+    document.getElementById('q3-2explain').style.display = "none"
+    document.getElementById('q3-3explain').style.display = "none"
+    document.getElementById('q4explain').style.display = "none"
+    document.getElementById('q5explain').style.display = "block"
+    document.getElementById('q6explain').style.display = "none"
 }
 
     function mental_yes() {
@@ -160,6 +272,14 @@ function resp_normal() {
     document.getElementById("delayed").style.display = "block";
     document.getElementById("immediate").style.display = "none";
     document.getElementById('expectant').style.display = "none";
+    document.getElementById('q1explain').style.display = "none"
+    document.getElementById('q2explain').style.display = "none"
+    document.getElementById('q3-1explain').style.display = "none"
+    document.getElementById('q3-2explain').style.display = "none"
+    document.getElementById('q3-3explain').style.display = "none"
+    document.getElementById('q4explain').style.display = "none"
+    document.getElementById('q5explain').style.display = "none"
+    document.getElementById('q6explain').style.display = "block"
 }
     function mental_no() {
     document.getElementById('placeholder').style.display = "none";
@@ -167,6 +287,14 @@ function resp_normal() {
     document.getElementById("delayed").style.display = "none";
     document.getElementById("immediate").style.display = "block";
     document.getElementById('expectant').style.display = "none";
+    document.getElementById('q1explain').style.display = "none"
+    document.getElementById('q2explain').style.display = "none"
+    document.getElementById('q3-1explain').style.display = "none"
+    document.getElementById('q3-2explain').style.display = "none"
+    document.getElementById('q3-3explain').style.display = "none"
+    document.getElementById('q4explain').style.display = "none"
+    document.getElementById('q5explain').style.display = "none"
+    document.getElementById('q6explain').style.display = "block"
 }
 
 function refresh() {
