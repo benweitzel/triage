@@ -4,5 +4,19 @@ div.card{
 
 .alert-light{
     border-color:black;
-    --bs-alert-border-color: #000000;
+    --bs-alert-border-color:#000000;
+}
+
+.button-padding{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#banner{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.tag-ref{
+    vertical-align:middle;
 }
