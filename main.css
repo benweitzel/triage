@@ -4,7 +4,7 @@ div.card{
 
 .alert-light{
     border-color:black;
-    --bs-alert-border-color: #000000;
+    --bs-alert-border-color:#000000;
 }
 
 .button-padding{
@@ -15,4 +15,8 @@ div.card{
 #banner{
     padding-top:5px;
     padding-bottom:5px;
+}
+
+.tag-ref{
+    vertical-align:middle;
 }
